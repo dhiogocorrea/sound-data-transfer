@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import SoundAnalyzer from "./components/SoundAnalyzer";
+import SoundGenerator from "./components/SoundGenerator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Generate sound (encode string to audio)</h1>
+      <SoundGenerator />
+      <h1>Upload audio (decode sound to string)</h1>
+      <SoundAnalyzer />
     </div>
   );
 }
